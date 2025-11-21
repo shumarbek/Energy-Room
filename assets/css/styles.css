@@ -17,10 +17,20 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+header nav a {
+    transition: .3s ease;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
 .activePage {
     color: #CC0000;
-    margin-top: 5px;
-    border-bottom: 5px solid #CC0000;
+}
+
+@media screen and (min-width: 1024px) {
+    .activePage {
+        border-bottom: 3px solid #CC0000;
+    }
 }
 
 /* Search Bar */
@@ -29,8 +39,14 @@ body {
     line-height: 28px;
     align-items: center;
     position: relative;
-    max-width: 190px;
+    width: 190px;
 }
+
+
+#menu-container {
+    display: flex;
+}
+
 
 .search-input {
     width: 100%;
@@ -53,7 +69,7 @@ body {
 .search-input:focus,
 .search-input:hover {
     outline: none;
-    border-color: rgba(234, 76, 137, 0.4);
+    border-color: #cc000096;
     background-color: #fff;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
@@ -64,6 +80,60 @@ body {
     fill: #9e9ea7;
     width: 1rem;
     height: 1rem;
+}
+
+/* Search results styles */
+.search-results-container {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.95);
+    width: 150%;
+}
+
+.search-result-item {
+    transition: all 0.2s ease;
+}
+
+.search-result-item:hover {
+    background-color: #f9fafb;
+    transform: translateX(2px);
+}
+
+.search-result-item:active {
+    background-color: #f3f4f6;
+}
+
+/* Scrollbar styles for search results */
+.search-results-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0 0 8px 0;
+}
+
+.search-results-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.search-results-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        margin-bottom: 20px;
+    }
+    
+    .search {
+        width: 100%;
+        order: -1;
+    }
+
+    .search-results-container {
+        width: 100%;
+    }
 }
 
 
@@ -114,7 +184,7 @@ body {
 
 
 
-/* assets/css/styles.css fayliga qo'shing */
+
 .productModal-overlay {
     display: none;
     position: fixed;
@@ -288,4 +358,37 @@ body {
         height: calc(100vh - 90px);
         background-color: #ccc;
     }
+}
+
+
+
+
+/* wishlist */
+.h-custom {
+    height: calc(80vh - 200px);
+}
+
+@media screen and (max-width: 640px) {
+    .h-custom {
+        height: calc(95vh - 180px);
+    }
+}
+
+
+
+
+
+
+/* products.html */
+.category-btn.active div div:first-child span {
+    color: white !important;
+}
+
+.category-group {
+    position: relative;
+}
+
+.subcategory-btn:hover {
+    transform: translateX(4px);
+    transition: transform 0.2s ease;
 }

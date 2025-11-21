@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         render() {
             let discount = Math.round(((this.oldPrice - this.price) / this.oldPrice) * 100);
             let oldPrice = '';
-            console.log(discount);
 
             this.price = this.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
             this.oldPrice = this.oldPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -32,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="block relative h-48 rounded overflow-hidden relative cursor-pointer rounded-lg bg-white" onclick="openProductModal(${this.id})">
                         <img src="${this.image}" alt="${this.name}" class="object-cover object-center w-full h-full block">
                         ${discount}
-                        <button class="cursor-pointer absolute top-3 right-3 bg-white rounded-full p-1" onclick="addToWishlist(${this.id})">
+                        <button class="cursor-pointer absolute top-3 right-3 bg-white rounded-full p-1 block">
                             <img src="./assets/icons/heart-black.png" alt="heart" class="w-5">
                         </button>
                     </div>
@@ -45,8 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 ${oldPrice}
                             </div>
                         </div>
-                        <button
-                            class="addToCartBtn flex items-center justify-center bg-[#CC0000] text-white sm:text-sm sm:w-auto w-full text-[0.875rem] px-2 py-2 rounded-lg cursor-pointer hover:bg-[#CC0000]/80 transition" onclick="addToCart(${this.id})">
+                        <button class="addToCartBtn flex items-center justify-center bg-[#CC0000] text-white sm:text-sm sm:w-auto w-full text-[0.875rem] px-2 py-2 rounded-lg cursor-pointer hover:bg-[#CC0000]/80 transition" onclick="addToCart(${this.id})">
                             <span class="mr-1">Add to cart</span>
                             <img src="./assets/icons/cart-white.png" alt="cart" class="w-4">
                         </button>

@@ -1,22 +1,34 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Energy Room — high-quality laptops, desktops and gaming accessories. Fast delivery, official warranty and professional support." />
-    <meta name="author" content="Energy World" />
-    <meta name="keywords"
-        content="laptops, computers, gaming accessories, Energy Room, laptop, PC, headphones, keyboard, gaming" />
-    <title>Energy Room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Energy Room</title>
     <link rel="icon" href="./assets/icons/logo-icon.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/tailwind.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <!-- Header -->
     <header id="header"
         class="sm:px-6 md:px-10 bg-[rgb(255,255,255,0.9)] sticky top-0 z-99 overflow-hidden lg:overflow-visible">
@@ -31,13 +43,13 @@
                 class="lg:w-[1000px] lg:max-w-[90%] w-full flex items-center lg:flex-row flex-col lg:relative absolute top-0 lg:right-0 right-[-100%] z-99 lg:h-auto h-[100vh] lg:pt-0 pt-20 lg:px-10 px-5">
                 <nav
                     class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base flex-col lg:flex-row items-start lg:items-center w-full lg:w-auto">
-                    <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem] activePage"
+                    <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem]"
                         href="index.html">Home</a>
                     <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem]"
                         href="products.html">Products</a>
                     <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem]"
                         href="about.html">About</a>
-                    <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem]"
+                    <a class="mr-5 hover:text-gray-900 lg:text-[1rem] sm:text-[1.25rem] text-[1.5rem] activePage"
                         href="contact.html">Contact</a>
                 </nav>
                 <div class="search lg:py-auto py-5 relative">
@@ -78,195 +90,264 @@
         </div>
     </header>
 
-    <!-- Hero section -->
-    <section id="hero" class="sm:px-6 md:px-10 text-gray-600 body-font ">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div id="hero-content"
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center relative left-[-100%]">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Power Up Your Setup
-                    <br class="hidden lg:inline-block">With Energy Room
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-black text-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Get In <span class="text-[#CC0000]">Touch</span>
                 </h1>
-                <p class="mb-8 leading-relaxed text-lg text-gray-700">
-                    Discover modern computers, laptops, and gaming accessories powered by the latest technology.
-                    Premium quality — affordable prices. Your trusted tech partner —
-                    <span class="font-semibold text-red-600">Energy Room</span>.
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+                    Ready to power up your gaming experience? We're here to help with any questions about our products
+                    and services.
                 </p>
-                <div class="flex justify-center">
-                    <a href="#topSale"
-                        class="inline-flex text-white bg-[#CC0000] border-0 py-2 px-6 focus:outline-none hover:bg-[#CC0000]/60 rounded text-lg">Top
-                        Sale</a>
-                    <a href="./products.html"
-                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">View
-                        All</a>
-                </div>
-            </div>
-            <div id="hero-image" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 relative right-[-100%]">
-                <img class="object-cover object-center rounded" alt="hero" src="./assets/img/hero.png"
-                    style="clip-path: polygon(20% 0%, 80% 10%, 100% 40%, 90% 80%, 50% 100%, 10% 80%, 0% 40%);">
             </div>
         </div>
     </section>
 
-    <!-- Quick categories -->
-    <section class="sm:px-6 md:px-10container mx-auto px-4">
-        <div class="text-center mb-12">
-            <h1 class="text-3xl font-bold text-gray-800 mb-3">Quick Categories</h1>
-            <p class="text-gray-600 max-w-2xl mx-auto">Quick access to computer and accessories categories</p>
-        </div>
+    <!-- Contact Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+                <!-- Contact Form -->
+                <div class="animate-fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">Send us a message</h2>
+                        <p class="text-gray-600 mb-8">We'll get back to you within 24 hours</p>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-laptop text-[#CC0000] text-xl"></i>
+                        <form class="space-y-6" id="contactForm">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
+                                        First Name *
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors"
+                                        placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
+                                        Last Name *
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors"
+                                        placeholder="Doe">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors"
+                                    placeholder="john@example.com">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                    Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors"
+                                    placeholder="+1 (555) 123-4567">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                    Subject *
+                                </label>
+                                <select id="subject" name="subject" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors">
+                                    <option value="">Select a subject</option>
+                                    <option value="product-inquiry">Product Inquiry</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="warranty-claim">Warranty Claim</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                                    Message *
+                                </label>
+                                <textarea id="message" name="message" rows="6" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CC0000] focus:border-transparent transition-colors resize-none"
+                                    placeholder="Tell us about your inquiry..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-[#CC0000] text-white py-4 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#CC0000] focus:ring-offset-2">
+                                <span class="flex items-center justify-center">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    Send Message
+                                </span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <h3 class="font-medium text-gray-800 text-sm">Laptop</h3>
-            </a>
 
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-desktop text-[#CC0000] text-xl"></i>
+                <!-- Contact Information -->
+                <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="space-y-8">
+                        <!-- Contact Info Cards -->
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-[#CC0000] rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Visit Our Store</h4>
+                                        <p class="text-gray-600">123 Gaming Street<br>Tech City, TC 12345<br>United
+                                            States</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-[#CC0000] rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-phone text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Call Us</h4>
+                                        <p class="text-gray-600 mb-1">+1 (555) 123-ENERGY</p>
+                                        <p class="text-sm text-gray-500">Mon-Fri: 9AM-6PM EST</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-[#CC0000] rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-envelope text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Email Us</h4>
+                                        <p class="text-gray-600 mb-1">support@energyroom.com</p>
+                                        <p class="text-gray-600">sales@energyroom.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Hours -->
+                        <div class="bg-gradient-to-br from-[#CC0000] to-red-700 rounded-2xl shadow-xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-4">Support Hours</h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                    <span class="font-medium">Monday - Friday</span>
+                                    <span>9:00 AM - 6:00 PM EST</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-white/20">
+                                    <span class="font-medium">Saturday</span>
+                                    <span>10:00 AM - 4:00 PM EST</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2">
+                                    <span class="font-medium">Sunday</span>
+                                    <span>Closed</span>
+                                </div>
+                            </div>
+                            <div class="mt-6 p-4 bg-white/10 rounded-lg">
+                                <p class="text-sm">💡 <strong>Emergency Support:</strong> Available 24/7 for warranty
+                                    claims and critical technical issues.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Quick Links -->
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Quick Help</h3>
+                            <div class="space-y-3">
+                                <a href="#"
+                                    class="flex items-center justify-between p-3 text-gray-700 hover:text-[#CC0000] hover:bg-red-50 rounded-lg transition-colors group">
+                                    <span>Shipping & Delivery Information</span>
+                                    <i
+                                        class="fas fa-chevron-right text-gray-400 group-hover:text-[#CC0000] transition-colors"></i>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center justify-between p-3 text-gray-700 hover:text-[#CC0000] hover:bg-red-50 rounded-lg transition-colors group">
+                                    <span>Return & Refund Policy</span>
+                                    <i
+                                        class="fas fa-chevron-right text-gray-400 group-hover:text-[#CC0000] transition-colors"></i>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center justify-between p-3 text-gray-700 hover:text-[#CC0000] hover:bg-red-50 rounded-lg transition-colors group">
+                                    <span>Warranty Claims</span>
+                                    <i
+                                        class="fas fa-chevron-right text-gray-400 group-hover:text-[#CC0000] transition-colors"></i>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center justify-between p-3 text-gray-700 hover:text-[#CC0000] hover:bg-red-50 rounded-lg transition-colors group">
+                                    <span>Technical Support FAQ</span>
+                                    <i
+                                        class="fas fa-chevron-right text-gray-400 group-hover:text-[#CC0000] transition-colors"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="font-medium text-gray-800 text-sm">PC</h3>
-            </a>
-
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-keyboard text-[#CC0000] text-xl"></i>
-                </div>
-                <h3 class="font-medium text-gray-800 text-sm">Keyboard</h3>
-            </a>
-
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-mouse text-[#CC0000] text-xl"></i>
-                </div>
-                <h3 class="font-medium text-gray-800 text-sm">Mouse</h3>
-            </a>
-
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-microchip text-[#CC0000] text-xl"></i>
-                </div>
-                <h3 class="font-medium text-gray-800 text-sm">Parts</h3>
-            </a>
-
-            <a href="./products.html"
-                class="category-card bg-white rounded-xl shadow-sm p-5 text-center border border-gray-100 hover:shadow-md hover:border-red-200">
-                <div class="w-12 h-12 icon-bg rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="fas fa-headphones text-[#CC0000] text-xl"></i>
-                </div>
-                <h3 class="font-medium text-gray-800 text-sm">Accessories</h3>
-            </a>
-        </div>
-    </section>
-
-    <!-- Products -->
-    <section id="topSale" class="sm:px-6 md:px-10 text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div id="productCards" class="productCards flex flex-wrap -m-4 justify-around relative top-100 opacity-0">
             </div>
         </div>
     </section>
 
-    <!-- Trust section -->
-    <section id="trustSection" class="sm:px-6 md:px-10 text-gray-600 body-font bg-gray-100">
-        <div class="container px-5 py-24 mx-auto">
-            <div id="trustCard_1"
-                class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col relative left-[-100%] opacity-0">
-                <div
-                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 flex-shrink-0">
-                    <img src="./assets/icons/fast-delivery.png" alt="fast-delivery">
-                </div>
-                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Free shipping</h2>
-                    <p class="leading-relaxed text-base">Free shipping on all orders over $100</p>
-                    <a href="#" class="mt-3 text-[#CC0000] inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
+    <!-- Map Section -->
+    <section id="store-location" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Find Our Store</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Visit our flagship store in Tech City for hands-on
+                    experience with our latest gaming gear</p>
             </div>
-            <div id="trustCard_2"
-                class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col relative right-[-100%] opacity-0">
-                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Free returns</h2>
-                    <p class="leading-relaxed text-base">Free returns within 30 days</p>
-                    <a href="#" class="mt-3 text-[#CC0000] inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-in-up">
+                <!-- Map Placeholder -->
+                <div class="h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                    <div class="text-center text-gray-600">
+                        <i class="fas fa-map text-4xl mb-4 text-[#CC0000]"></i>
+                        <p class="text-lg font-semibold">Interactive Map</p>
+                        <p class="text-sm">123 Gaming Street, Tech City</p>
+                    </div>
                 </div>
-                <div
-                    class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 flex-shrink-0">
-                    <img src="./assets/icons/commercial.png" alt="commercial">
-                </div>
-            </div>
-            <div id="trustCard_3"
-                class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col relative left-[-100%] opacity-0">
-                <div
-                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 flex-shrink-0">
-                    <img src="./assets/icons/shield.png" alt="shield">
-                </div>
-                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">1-year warranty</h2>
-                    <p class="leading-relaxed text-base">1-year warranty on all products</p>
-                    <a href="#" class="mt-3 text-[#CC0000] inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
+
+                <div class="p-6 bg-white">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">📍 Location</h4>
+                            <p class="text-gray-600">123 Gaming Street<br>Tech City, TC 12345</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">🕒 Store Hours</h4>
+                            <p class="text-gray-600">Mon-Sat: 10AM-8PM<br>Sun: 12PM-6PM</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900 mb-2">🚗 Parking</h4>
+                            <p class="text-gray-600">Free parking available<br>EV charging stations</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter section -->
-    <section
-        class="sm:px-6 md:px-10 max-w-5xl my-20 mx-auto px-8 py-12 bg-gradient-to-r from-white to-slate-50 rounded-2xl shadow flex justify-between items-center flex-col sm:flex-row bg-gray-100">
-        <div class="mb-10 sm:mb-0">
-            <h2 class="text-3xl font-semibold">Want product news and updates?</h2>
-            <h2 class="text-3xl font-semibold">Sign up for our newsletter</h2>
-        </div>
-        <div class="flex flex-col">
-            <form id="newsletterForm" class="flex gap-3">
-                <input id="newsletterEmail" type="email" required placeholder="you@example.com"
-                    class="flex px-4 py-2 w-full sm:w-80 border rounded-lg" />
-                <button type="submit" class="px-5 py-2 rounded-lg bg-[#CC0000] text-white">Subscribe</button>
-            </form>
-            <p class="text-xs text-slate-500 mt-2">We respect your privacy. Unsubscribe anytime.</p>
-        </div>
-    </section>
-
-    <!-- Testimonials section -->
-    <section class="text-gray-600 body-font bg-gray-100">
-        <div class="container px-5 py-24 mx-auto">
-            <h1 class="text-3xl font-bold text-center text-gray-800 mb-12">Testimonials</h1>
-
-            <div class="relative max-w-4xl mx-auto">
-                <div class="overflow-hidden">
-                    <div id="carousel-track" class="flex carousel-transition"></div>
-                </div>
-
-                <button id="prev-btn"
-                    class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-[#CC0000] hover:text-white transition-colors">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button id="next-btn"
-                    class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-[#CC0000] hover:text-white transition-colors">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-                <div id="carousel-indicators" class="flex justify-center mt-8 space-x-2"></div>
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-[#CC0000] to-red-700 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Power Up Your Gaming Setup?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of satisfied gamers who trust Energy Room for their
+                gaming needs</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html"
+                    class="bg-white text-[#CC0000] hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                    Shop Now
+                </a>
+                <a href="about.html"
+                    class="bg-transparent hover:bg-white/10 border-2 border-white text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+                    Learn More
+                </a>
             </div>
         </div>
     </section>
@@ -437,13 +518,12 @@
         </div>
     </footer>
 
-    <!-- Product modal -->
-    <div id="productModal" class="sm:px-6 md:px-10 productModal-overlay">
-        <div class="productModal-content fade-in">
-            <button class="close-btn" onclick="closeProductModal()">
-                <img src="./assets/icons/close.png" alt="close" class="w-full">
-            </button>
-            <div id="productModalContent" class="p-6"></div>
+    <!-- Success Toast -->
+    <div id="successToast"
+        class="fixed top-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle mr-2"></i>
+            <span>Message sent successfully!</span>
         </div>
     </div>
 
@@ -548,25 +628,59 @@
         <img src="./assets/icons/arrowhead-up.png" alt="icon" class="w-full">
     </button>
 
-    <!-- Welcome massage -->
-    <div id="welcomMessage"
-        class="fixed top-30 left-[-100%] flex items-center bg-[#CC0000] border-1 border-[#1002] shadow-[1px_1px_5px_#000] text-white p-3 rounded-tr-[40px] rounded-br-[40px] z-1000">
-        <p>Welcome to Energy Room</p>
-        <img src="./assets/icons/fast-forward.png" alt="icon" class="w-[20px] ml-2">
-    </div>
-
-
-
-    <script src="./assets/js/index.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/search.js"></script>
-    <script src="./assets/js/wishlistModal.js"></script>
     <script src="./assets/js/cart.js"></script>
-    <script src="./assets/js/productCard.js"></script>
-    <script src="./assets/data/products.js"></script>
     <script src="./assets/js/productModal.js"></script>
-    <script src="./assets/data/testimonials.js"></script>
-    <script src="./assets/js/testimonialCard.js"></script>
+    <script src="./assets/data/products.js"></script>
+    <script src="./assets/js/wishlistModal.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                showSuccessToast();
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        function showSuccessToast() {
+            const toast = document.getElementById('successToast');
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 3000);
+        }
+
+        // Add animation on scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const animatedElements = document.querySelectorAll('.animate-fade-in-up');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(element => {
+                element.style.animationPlayState = 'paused';
+                observer.observe(element);
+            });
+        });
+    </script>
 </body>
 
 </html>

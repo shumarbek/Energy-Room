@@ -1,6 +1,4 @@
 function openProductModal(productId) {
-    console.log('openProductModal:', productId);
-
     const product = products.find(p => p.id === productId);
     if (!product) {
         console.error('Product:', productId);
@@ -75,7 +73,7 @@ function generateModalContent(product) {
                                 <span class="mr-2">Add to cart</span>
                                 <img src="./assets/icons/cart-white.png" alt="cart" class="w-5">
                             </button>
-                            <button class="flex items-center border border-gray-300 text-gray-700 px-4 py-3 rounded-lg cursor-pointer hover:bg-gray-100 transition">
+                            <button class="flex items-center border border-gray-300 text-gray-700 px-4 py-3 rounded-lg cursor-pointer hover:bg-gray-100 transition" onclick="addToWishlist(${product.id})" data-wishlist-btn="${product.id}">
                                 <img src="./assets/icons/heart-black.png" alt="heart" class="w-5">
                             </button>
                         </div>

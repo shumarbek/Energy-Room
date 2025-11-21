@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="text-center">
                                     <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="${this.image}">
                                     <p class="leading-relaxed mb-6">${this.comment}</p>
-                                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-2 mb-4"></span>
+                                    <span class="inline-block h-1 w-10 rounded bg-[#CC0000] mt-2 mb-4"></span>
                                     <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">${this.name}</h2>
                                     <p class="text-gray-500">${this.category}</p>
                                 </div>
@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
         indicators.forEach((indicator, index) => {
             if (index === currentIndex) {
                 indicator.classList.remove('bg-gray-300');
-                indicator.classList.add('bg-indigo-500');
+                indicator.classList.add('bg-[#CC0000]');
                 indicator.classList.add('w-8');
             } else {
-                indicator.classList.remove('bg-indigo-500');
+                indicator.classList.remove('bg-[#CC0000]');
                 indicator.classList.remove('w-8');
                 indicator.classList.add('bg-gray-300');
             }
